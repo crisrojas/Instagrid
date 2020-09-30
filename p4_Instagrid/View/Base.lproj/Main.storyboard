@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -20,32 +20,35 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="p4_Instagrid" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Instagrid" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFy-UM-Oyq">
-                                <rect key="frame" x="10" y="5" width="647" height="39"/>
+                                <rect key="frame" x="10" y="67" width="394" height="39"/>
                                 <fontDescription key="fontDescription" name="ThirstySoftRegular" family="Thirsty Soft" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Nel-w7-CuF" userLabel="Swipe">
-                                <rect key="frame" x="20" y="161" width="160.5" height="53"/>
+                                <rect key="frame" x="0.0" y="166" width="414" height="49"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow Up" translatesAutoresizingMaskIntoConstraints="NO" id="cCu-rX-Jwf">
-                                        <rect key="frame" x="75.5" y="0.0" width="10" height="14"/>
+                                        <rect key="frame" x="200" y="0.0" width="14" height="10"/>
                                         <variation key="heightClass=compact" image="Arrow Left"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Swipe up to share" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xma-xZ-Gbe">
-                                        <rect key="frame" x="0.0" y="24" width="160.5" height="29"/>
+                                        <rect key="frame" x="127" y="20" width="160.5" height="29"/>
                                         <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="26"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact-widthClass=compact">
+                                            <fontDescription key="fontDescription" name="Delm-Medium" family="Delm" pointSize="21"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                             </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X0v-WI-bYI">
-                                <rect key="frame" x="183.5" y="64" width="300" height="300"/>
+                                <rect key="frame" x="57" y="225" width="300" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KEd-P6-AGe">
                                         <rect key="frame" x="10" y="10" width="280" height="280"/>
@@ -107,7 +110,7 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="B9o-4f-hZT" userLabel="Layout Buttons">
-                                <rect key="frame" x="547" y="48.5" width="80" height="278"/>
+                                <rect key="frame" x="68" y="742" width="278" height="80"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNb-3N-OLX">
                                         <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
@@ -117,14 +120,14 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ea1-X5-8yK">
-                                        <rect key="frame" x="0.0" y="99" width="80" height="80"/>
+                                        <rect key="frame" x="99" y="0.0" width="80" height="80"/>
                                         <state key="normal" image="Selected" backgroundImage="Layout 2"/>
                                         <connections>
                                             <action selector="layoutButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Xa-Xc-a64"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfQ-bb-KQG">
-                                        <rect key="frame" x="0.0" y="198" width="80" height="80"/>
+                                        <rect key="frame" x="198" y="0.0" width="80" height="80"/>
                                         <state key="normal" backgroundImage="Layout 3"/>
                                         <connections>
                                             <action selector="layoutButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Z3-0b-AB2"/>
@@ -185,10 +188,10 @@
                     <connections>
                         <outlet property="gridView" destination="X0v-WI-bYI" id="MYJ-S8-a43"/>
                         <outlet property="swipeLabel" destination="xma-xZ-Gbe" id="z2e-vN-MbH"/>
-                        <outletCollection property="GridButtonCollection" destination="qRv-fX-kqz" collectionClass="NSMutableArray" id="YA4-cz-6xP"/>
-                        <outletCollection property="GridButtonCollection" destination="SVc-dN-Uq6" collectionClass="NSMutableArray" id="mvl-jl-l8H"/>
-                        <outletCollection property="GridButtonCollection" destination="0oY-AC-yUt" collectionClass="NSMutableArray" id="A26-Wg-WZT"/>
-                        <outletCollection property="GridButtonCollection" destination="iyy-Wz-x0k" collectionClass="NSMutableArray" id="ZBq-S4-qtz"/>
+                        <outletCollection property="gridButtonCollection" destination="qRv-fX-kqz" collectionClass="NSMutableArray" id="YA4-cz-6xP"/>
+                        <outletCollection property="gridButtonCollection" destination="SVc-dN-Uq6" collectionClass="NSMutableArray" id="mvl-jl-l8H"/>
+                        <outletCollection property="gridButtonCollection" destination="0oY-AC-yUt" collectionClass="NSMutableArray" id="A26-Wg-WZT"/>
+                        <outletCollection property="gridButtonCollection" destination="iyy-Wz-x0k" collectionClass="NSMutableArray" id="ZBq-S4-qtz"/>
                         <outletCollection property="layoutCollection" destination="QNb-3N-OLX" collectionClass="NSMutableArray" id="ZCM-ZL-Fna"/>
                         <outletCollection property="layoutCollection" destination="ea1-X5-8yK" collectionClass="NSMutableArray" id="xd1-CV-vTk"/>
                         <outletCollection property="layoutCollection" destination="xfQ-bb-KQG" collectionClass="NSMutableArray" id="UOO-RQ-CtJ"/>

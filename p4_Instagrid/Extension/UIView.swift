@@ -10,14 +10,15 @@ import UIKit
 
 extension UIView {
     
-    func asImage() -> UIImage {
+    func asImage() -> UIImage? {
         
         UIGraphicsBeginImageContext(self.frame.size)
-        self.layer.render(in: UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
+        guard let currentContext = UIGraphicsGetCurrentContext() else { return nil }
+        self.layer.render(in: currentContext)
+        guard let image = UIGraphicsGetImageFromCurrentImageContext() else { return nil }
         UIGraphicsEndImageContext()
-        return UIImage(cgImage: image!.cgImage!)
-        
+        guard let cgImage = image.cgImage else { return nil }
+        return UIImage(cgImage: cgImage)
     }
 }
 
